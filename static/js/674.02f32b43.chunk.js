@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[674],{8674:function(e,a,t){t.r(a),t.d(a,{default:function(){return l}});var s="HomePage_home__N+EMb",n="HomePage_title__UFLA3",r="HomePage_text__2XixT",c=t(184),l=function(){return(0,c.jsxs)("div",{className:s,children:[(0,c.jsx)("h1",{className:n,children:"HomePage"}),(0,c.jsx)("p",{className:r,children:"Please, login or sign up "})]})}}}]);
+//# sourceMappingURL=674.02f32b43.chunk.js.map
