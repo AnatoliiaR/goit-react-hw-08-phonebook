@@ -1,4 +1,4 @@
-import style from '../RegisterForm/RegisterForm.module.css';
+import style from '../LoginForm/LoginForm.module.css';
 import useForm from '../../services/hooks/useForm';
 import TextField from 'shared/TextField/TextField';
 import Button from 'shared/Button/Button';
@@ -6,23 +6,16 @@ import Button from 'shared/Button/Button';
 import initialState from './initialState';
 import fields from './fields';
 
-const RegisterForm = ({ onSubmit }) => {
+const LoginForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({
     initialState,
     onSubmit,
   });
-  const { name, email, password } = state;
+  const { email, password } = state;
 
   return (
     <div className={style.section}>
       <form onSubmit={handleSubmit} className={style.form}>
-        <TextField
-          value={name}
-          handleChange={handleChange}
-          {...fields.name}
-          className={style.input}
-          placeholder="example: Karen"
-        />
         <TextField
           value={email}
           handleChange={handleChange}
@@ -37,10 +30,10 @@ const RegisterForm = ({ onSubmit }) => {
           className={style.input}
           placeholder="Your password"
         />
-        <Button className={style.button}>Register</Button>
+        <Button>Login</Button>
       </form>
     </div>
   );
 };
 
-export default RegisterForm;
+export default LoginForm;

@@ -1,8 +1,14 @@
 .link {
     display: inline-block;
     text-decoration: none;
-    color: brown;
+    color: rgb(63, 62, 62);
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link:hover {
+    color: brown;
 }
 
 .link:global(.active) {

@@ -1,1 +1,17 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 20px;
+}
 
+.label {
+  display: flex;
+  margin-bottom: 0.25rem;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+  width: 150px;
+  margin-right: 100px;
+  color: rgb(63, 62, 62);
+}

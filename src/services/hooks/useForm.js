@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 const UseForm = ({ initialState, onSubmit }) => {
   const [state, setState] = useState({ ...initialState });
 
-  const onChange = ({ target }) => {
-    setState(prevState => {
-      const { name, value, checked, type } = target;
-      const newValue = type === 'checkbox' ? checked : value;
-
-      return { ...prevState, [name]: newValue };
-    });
-  };
+  const handleChange = useCallback(
+    ({ target }) => {
+      const { name, value } = target;
+      setState(prevState => {
+        return { ...prevState, [name]: value };
+      });
+    },
+    [setState]
+  );
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -18,7 +19,7 @@ const UseForm = ({ initialState, onSubmit }) => {
     setState({ ...initialState });
   };
 
-  return { state, setState, onChange, handleSubmit };
+  return { state, setState, handleChange, handleSubmit };
 };
 
 export default UseForm;

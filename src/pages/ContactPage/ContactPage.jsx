@@ -42,9 +42,6 @@ export default function App() {
 
   return (
     <div className={style.App}>
-      <h1 className={style.title}>
-        React homework "Phonebook" by Anatoliia Riabchenko
-      </h1>
       <div className={style.section}>
         <h2 className={style.subtitle}>Phonebook</h2>
         <Form onSubmit={onAddContact} contacts={contacts} />

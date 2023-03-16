@@ -6,8 +6,8 @@ const NavbarAuth = () => {
     <div>
       <NavLink to="/register" className={style.link}>
         Register
-      </NavLink>{' '}
-      |
+      </NavLink>
+      {''}|
       <NavLink to="/login" className={style.link}>
         Login
       </NavLink>

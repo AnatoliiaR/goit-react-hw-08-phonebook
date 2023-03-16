@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { signup } from '../../redux/auth/auth-operations';
 import { isUserLogin } from '../../redux/auth/auth-selector';
 import { Navigate } from 'react-router-dom';
-import style from './RegisterPage.module.css';
 
 const RegisterPage = () => {
   const isLogin = useSelector(isUserLogin);
@@ -18,9 +17,9 @@ const RegisterPage = () => {
   }
 
   return (
-    <div className={style.page}>
-      <h1 className={style.title}>Register Page</h1>
-      <RegisterForm onSubmit={handleSignup} className={style.form} />
+    <div>
+      <h1>RegisterPage</h1>
+      <RegisterForm onSubmit={handleSignup} />
     </div>
   );
 };

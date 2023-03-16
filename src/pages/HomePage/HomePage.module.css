@@ -1,0 +1,15 @@
+.home {
+  display: block;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 100px;
+  color: rgb(63, 62, 62);
+}
+.text {
+  color: rgb(63, 62, 62);
+  font-size: 20px;
+  margin-top: 30px;
+}
